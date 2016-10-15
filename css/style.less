@@ -90,6 +90,7 @@ figure{
     clear: both;
 }
 
+.recherche {
 table{
     width: 100%;
     box-sizing: inherit;
@@ -124,6 +125,7 @@ table{
     .table-color-1 td:first-child{
         background-color: #3d8af9;
     }
+}
 }
 
 .submit-container{
@@ -239,4 +241,31 @@ form{
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0px; 
+}
+.vignette {
+    border-radius: 7px;
+    background:linear-gradient(to right, rgba(61, 138, 249, 100), rgba(0,0,0,0)), url(../images/photo_cinema.jpg);
+    background-position: left top;
+    background-size: 100% auto;
+    padding: 20px;
+    margin: 20px;
+    .vignetteHeader {
+    font-size: 1.2em;
+    color: white;
+    font-weight: bold;
+}
+}
+.recap-recherche {
+    font-weight: bold;
+    font-size: 24px;  
+    color: white;
+    padding: 20px;
+    background: color(rgba(61, 138, 249, 100));
+    ul{
+        float: right;
+        li
+        {
+            display: inline-block;
+        }
+    }
 }
