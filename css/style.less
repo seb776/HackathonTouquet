@@ -10,24 +10,28 @@ html, body{
 nav{
     background-color: white;
     height: 50px;
-    img{
+    button{
         height: 50px;
+    }
+    img{
+        max-height: 50px;
         float: left;
     }
     .logo-cci{
         float: right;
     }
     ul{
+        z-index: 10;
         background-color: #266cbf;
         position: absolute;
         width: 70%;
         top: 0;
         left: 0;
         height: 100%;
+        //        display: none;
+        margin-left: -100%;
         button{
             float: right;
-            width: 30px;
-            padding: 15px !important;
             display: block;
             cursor: pointer;
         }
@@ -48,22 +52,118 @@ nav{
 }
 .main{
     height: 100%;
+    z-index: 5;
     overflow: hidden;
 }
+
 .button-sans-sytle{
     border: none;
     background-color: transparent;
     padding: 0;
-    img{
-        //        padding: 10px;
-        width: 100%;
+    img{    
+        max-height: 100%;
         height: auto;
     }
 }
-.figure{
 
+figure{
+    margin: 0;
+    position: relative;
+    display: block;
+    figcaption{
+        font-size: 0.8em;
+        width: 100%;
+        position: absolute;
+        padding: 5px;
+        bottom: 5px;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+    }
 }
-
 .clear{
     clear: both;
+}
+table{
+    width: 100%;
+    box-sizing: inherit;
+    td{
+        padding: 5px;
+        img{
+            vertical-align: middle;
+        }
+    }
+    tr{
+        border: 1px solid #2d74c9;
+    }
+    td:first-child{
+        text-align: center;
+        img{
+            width: 38px;
+        }
+    }
+    td:first-child{
+        width: 35%;
+    }
+    td:nth-child(1){
+        width: 35%;
+    }
+    td:nth-child(2){
+        width: 30%;
+    }
+    td:first-child{
+        background-color: #5da2f4;
+    }
+    .table-color-1 td:first-child{
+        background-color: #3d8af9;
+    }
+}
+
+.compteur-dynamique{
+    width: 36px;
+}
+
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
 }
