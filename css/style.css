@@ -5,6 +5,7 @@ body {
   max-height: 100%;
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
+  color: #141414;
 }
 * {
   box-sizing: inherit;
@@ -134,7 +135,7 @@ form input[type="text"] {
   border-color: #3d8af9;
   border-radius: 4px;
   text-align: center;
-  color: #080808;
+  color: #141414;
   font-size: 1.2em;
   opacity: 1;
 }
@@ -148,19 +149,19 @@ form input[type="submit"] {
   font-size: 1.2em;
 }
 form input[type="text"]:-moz-placeholder {
-  color: #080808;
+  color: #141414;
   opacity: 1;
 }
 form input[type="text"]::-moz-placeholder {
-  color: #080808;
+  color: #141414;
   opacity: 1;
 }
 form input[type="text"]::-webkit-input-placeholder {
-  color: #080808;
+  color: #141414;
   opacity: 1;
 }
 form input[type="text"]:-ms-input-placeholder {
-  color: #080808;
+  color: #141414;
   opacity: 1;
 }
 .color-white {
@@ -173,6 +174,15 @@ form input[type="text"]:-ms-input-placeholder {
 }
 .compteur-dynamique {
   width: 30px;
+  vertical-align: middle;
+}
+.bouton-type {
+  background-color: #3d8af9;
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
 }
 .slider-activite-aleatoire img {
   height: 20px;
