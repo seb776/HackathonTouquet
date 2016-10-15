@@ -4,6 +4,7 @@ body {
   height: 100%;
   max-height: 100%;
   overflow: hidden;
+  font-family: 'Roboto', sans-serif;
 }
 * {
   box-sizing: inherit;
@@ -106,13 +107,14 @@ figure figcaption {
   width: 38px;
 }
 .recherche table td:nth-child(1) {
-  width: 35%;
+  width: 30%;
 }
 .recherche table td:nth-child(2) {
   width: 30%;
 }
 .recherche table td:nth-child(3) {
-  width: 40%;
+  width: 45%;
+  text-align: center;
 }
 .recherche table td:first-child {
   background-color: #5da2f4;
@@ -167,6 +169,7 @@ form input[type="text"]:-ms-input-placeholder {
 .exeption-commencer {
   text-align: left !important;
   background-color: transparent !important;
+  text-align: center;
 }
 .compteur-dynamique {
   width: 30px;
@@ -175,6 +178,7 @@ form input[type="text"]:-ms-input-placeholder {
   height: 20px;
 }
 .onoffswitch {
+  margin: 0 auto;
   position: relative;
   width: 90px;
   -webkit-user-select: none;
