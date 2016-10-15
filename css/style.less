@@ -1,7 +1,7 @@
 html, body{
     height: 100%;
     max-height: 100%;
-    overflow: hidden;
+//    overflow: hidden;
     font-family: 'Roboto', sans-serif;
     color: #141414;
 }
@@ -51,10 +51,17 @@ nav{
         }
     }
 }
+
+.fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
 .main{
-    height: 100%;
+    margin-top: 110px;
     z-index: 5;
-    overflow:auto;
 }
 
 .button-sans-sytle{
@@ -91,44 +98,44 @@ figure{
 }
 
 .recherche {
-table{
-    width: 100%;
-    box-sizing: inherit;
-    td{
-        padding: 5px;
-        img{
-            vertical-align: middle;
+    table{
+        width: 100%;
+        box-sizing: inherit;
+        td{
+            padding: 5px;
+            img{
+                vertical-align: middle;
+            }
+        }
+        tr{
+            border: 1px solid #2d74c9;
+        }
+        td:first-child{
+            text-align: center;
+            img{
+                width: 38px;
+            }
+        }
+        td:nth-child(1){
+            width: 30%;
+        }
+        td:nth-child(2){
+            width: 30%;
+        }
+        td:nth-child(3){
+            width: 45%;
+            text-align: center;
+        }
+        td:first-child{
+            background-color: #5da2f4;
+        }
+        .table-color-1 td:first-child{
+            background-color: #3d8af9;
         }
     }
-    tr{
-        border: 1px solid #2d74c9;
-    }
-    td:first-child{
-        text-align: center;
-        img{
-            width: 38px;
-        }
-    }
-    td:nth-child(1){
-        width: 30%;
-    }
-    td:nth-child(2){
-        width: 30%;
-    }
-    td:nth-child(3){
-        width: 45%;
-        text-align: center;
-    }
-    td:first-child{
-        background-color: #5da2f4;
-    }
-    .table-color-1 td:first-child{
-        background-color: #3d8af9;
-    }
-}
 }
 
-.submit-container{
+.align-center{
     text-align: center;
 }
 
@@ -190,10 +197,7 @@ form{
     color: white;
     font-size: 1.2em;
     text-decoration: none;
-}
-
-.slider-activite-aleatoire img{
-    height: 20px;
+    box-shadow: 3px 3px 0px #2771c9;
 }
 
 .onoffswitch {
@@ -243,28 +247,53 @@ form{
     right: 0px; 
 }
 .vignette {
-    border-radius: 7px;
-    background:linear-gradient(to right, rgba(61, 138, 249, 100), rgba(0,0,0,0)), url(../images/photo_cinema.jpg);
-    background-position: left top;
-    background-size: 100% auto;
-    padding: 20px;
-    margin: 20px;
-    .vignetteHeader {
-    font-size: 1.2em;
     color: white;
-    font-weight: bold;
+    border-radius: 7px;
+    background-position: center;
+    background-size:cover;
+    padding: 5%;
+    margin: 20px 10px;
+    position: relative;
+    min-height: 91px;
+    table td{
+        font-size: 0.8em;
+    }
+    .prix-bulle{
+        position: absolute;
+        top: -17px;
+        right: 25px;
+        span{
+            font-size: 1.1em;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 }
+.vignette0{
+    background:linear-gradient(to right, #f39200, rgba(0,0,0,0)), url(../images/endurot.jpg);
+}
+.vignette1{
+    background:linear-gradient(to right, rgba(61, 138, 249, 100), rgba(0,0,0,0)), url(../images/photo_cinema.jpg);
+}
+.vignette2{
+    background:linear-gradient(to right, rgba(61, 138, 249, 100), rgba(0,0,0,0)), url(../images/sortie2.jpg);
+}
+.vignette3{
+    background:linear-gradient(to right, rgba(61, 138, 249, 100), rgba(0,0,0,0)), url(../images/photo_restaurant.jpg);
 }
 .recap-recherche {
-    font-weight: bold;
-    font-size: 24px;  
     color: white;
-    padding: 20px;
+    padding: 10px;
     background: color(rgba(61, 138, 249, 100));
+    img{
+        width: 26px;
+        vertical-align: middle;
+    }
     ul{
         float: right;
-        li
-        {
+        li{
             display: inline-block;
         }
     }

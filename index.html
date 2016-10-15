@@ -3,84 +3,81 @@
     <head>
         <meta charset="UTF-8">
         <title>Cot Cot d'Opale</title>
-<!--        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet"> -->
+        <!--        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet"> -->
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
-        
+
     </head>
     <body>
 
-        <nav>
-            <button id="bouton-nav-open" class="button-sans-sytle"><img src="images/navicon.jpg" alt=""></button>
-            <img class="logo-cci" src="images/LogoCoteOpale.jpg" alt="">
-            <ul>
-                <li><button id="bouton-nav-close" class="close button-sans-sytle"><img src="images/close.png" alt=""></button></li>
-                <div class="clear"></div>
-                <li><a href="">Mes sauvegardes</a></li>
-                <li><a href="">Codes Promo</a></li>
-                <li><a href="">Langues</a></li>
-            </ul>
-        </nav>
+        <div class="fixed">
+
+            <nav>
+                <button id="bouton-nav-open" class="button-sans-sytle"><img src="images/navicon.jpg" alt=""></button>
+                <img class="logo-cci" src="images/LogoCoteOpale.jpg" alt="">
+                <ul>
+                    <li><button id="bouton-nav-close" class="close button-sans-sytle"><img src="images/close.png" alt=""></button></li>
+                    <div class="clear"></div>
+                    <li><a href="">Mes sauvegardes</a></li>
+                    <li><a href="">Codes Promo</a></li>
+                    <li><a href="">Langues</a></li>
+                </ul>
+            </nav>
+
+        </div>
 
         <div class="main">
+
             <section class="slide-activite-aleatoire">
                 <figure>
                     <img src="images/slide-1.jpg" alt="">
                     <figcaption>Découvrez le Touquet Paris Plage</figcaption>
                 </figure>
             </section>
-            <section class="deja-enregistre">
-<!--
-                <button>Mes activités</button>
-                <button>Mes code propos</button>
--->
-            </section>
-            <section class="recap-recherche">
 
-            </section>
             <section class="recherche">
                 <form action="">
                     <table>
                         <tr class="table-color-1">
-                            <td><img src="images/form-lieu.png" alt=""></td>
+                            <td><img src="images/form_icon_lieu.svg" alt=""></td>
                             <td colspan="2"><input type="text" text="" placeholder="Lieux"></td>
                         </tr>
                         <tr>
-                            <td><img src="images/form-personne.png" alt=""></td>
+                            <td><img src="images/form_icon_personne.svg" alt=""></td>
                             <td><label for="">Personnes</label></td>
                             <td>
                                 <button class="slider-activite-aleatoire button-sans-sytle">
-                                    <img src="images/bouton-moins.jpg" alt="">
+                                    <img src="images/form_icon_less.svg" alt="">
                                 </button>
                                 <input class="compteur-dynamique" type="text" placeholder="2">
                                 <button class="slider-activite-aleatoire button-sans-sytle">
-                                    <img src="images/bouton-plus.jpg" alt="">
+                                    <img src="images/form_icon_more.svg" alt="">
                                 </button>
                             </td>
                         </tr>
                         <tr class="table-color-1">
-                            <td><img src="images/form-budget.png" alt=""></td>
+                            <td><img src="images/form_icon_money.svg" alt=""></td>
                             <td><label for="">Budget (€)</label></td>
                             <td>
                                 <button class="slider-activite-aleatoire button-sans-sytle">
-                                    <img src="images/bouton-moins.jpg" alt="">
+                                    <img src="images/form_icon_less.svg" alt="">
                                 </button>
-                                <input class="compteur-dynamique" type="text" placeholder="30">
+                                <input class="compteur-dynamique" type="text" placeholder="55">
                                 <button class="slider-activite-aleatoire button-sans-sytle">
-                                    <img src="images/bouton-plus.jpg" alt="">
+                                    <img src="images/form_icon_more.svg" alt="">
                                 </button>
                             </td>
                         </tr>
                         <tr>
-                            <td rowspan="2"><img src="images/form-duree.png" alt=""></td>
+                            <td rowspan="2"><img src="images/form_icon_time.svg" alt=""></td>
                             <td><label for="">Temps (h)</label><br></td>
                             <td>
                                 <button class="slider-activite-aleatoire button-sans-sytle">
-                                    <img src="images/bouton-moins.jpg" alt="">
+                                    <img src="images/form_icon_less.svg" alt="">
                                 </button>
-                                <input class="compteur-dynamique" type="text" placeholder="3">
+                                <input class="compteur-dynamique" type="text" placeholder="12">
                                 <button class="slider-activite-aleatoire button-sans-sytle">
-                                    <img src="images/bouton-plus.jpg" alt="">
+                                    <img src="images/form_icon_more.svg" alt="">
                                 </button>
                             </td>
                         </tr>
@@ -88,16 +85,16 @@
                             <td class="exeption-commencer"><label for="">Commencer (h)</label></td>
                             <td style="width:45%;text-align:center;">
                                 <button class="slider-activite-aleatoire button-sans-sytle">
-                                    <img src="images/bouton-moins.jpg" alt="">
+                                    <img src="images/form_icon_less.svg" alt="">
                                 </button>
                                 <input class="compteur-dynamique" type="text" placeholder="Mtn">
                                 <button class="slider-activite-aleatoire button-sans-sytle">
-                                    <img src="images/bouton-plus.jpg" alt="">
+                                    <img src="images/form_icon_more.svg" alt="">
                                 </button>
                             </td>
                         </tr>
                         <tr class="table-color-1">
-                            <td><img src="images/form-enfant.png" alt=""></td>
+                            <td><img src="images/form_icon_baby.svg" alt=""></td>
                             <td><label for="">Enfant</label></td>
                             <td>
                                 <div class="onoffswitch">
@@ -110,7 +107,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><img src="images/form-handicap.png" alt=""></td>
+                            <td><img src="images/form_icon_pmr.svg" alt=""></td>
                             <td><label for="">RMP</label></td>
                             <td>   
                                 <div class="onoffswitch">
@@ -127,8 +124,8 @@
                         </tr>
                     </table>
                     <br>
-                    <div class="submit-container">
-                       <a class="bouton-type" href="liste-proposition.html">Rechercher</a>
+                    <div class="align-center">
+                        <a class="bouton-type" href="liste-proposition.html">Rechercher</a>
                     </div>
                 </form>
             </section>
