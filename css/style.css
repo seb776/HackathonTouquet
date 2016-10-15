@@ -243,7 +243,7 @@ form input[type="text"]:-ms-input-placeholder {
 }
 .vignette {
   border-radius: 7px;
-  background-image: url(../images/photo_cinema.jpg);
+  background: linear-gradient(to right, #3d8af9, rgba(0, 0, 0, 0)), url(../images/photo_cinema.jpg);
   background-position: left top;
   background-size: 100% auto;
   padding: 20px;
@@ -253,4 +253,17 @@ form input[type="text"]:-ms-input-placeholder {
   font-size: 1.2em;
   color: white;
   font-weight: bold;
+}
+.recap-recherche {
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  padding: 20px;
+  background: #3d8af9;
+}
+.recap-recherche ul {
+  float: right;
+}
+.recap-recherche ul li {
+  display: inline-block;
 }
