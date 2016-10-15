@@ -70,12 +70,17 @@ figure{
     margin: 0;
     position: relative;
     display: block;
+    img{
+        width: 100%;
+        display: block;
+    }
     figcaption{
+        text-align: center;
         font-size: 0.8em;
         width: 100%;
         position: absolute;
         padding: 5px;
-        bottom: 5px;
+        bottom: 0;
         background-color: rgba(0,0,0,0.5);
         color: white;
     }
@@ -83,6 +88,7 @@ figure{
 .clear{
     clear: both;
 }
+
 table{
     width: 100%;
     box-sizing: inherit;
@@ -101,14 +107,14 @@ table{
             width: 38px;
         }
     }
-    td:first-child{
-        width: 35%;
-    }
     td:nth-child(1){
         width: 35%;
     }
     td:nth-child(2){
         width: 30%;
+    }
+    td:nth-child(3){
+        width: 40%;
     }
     td:first-child{
         background-color: #5da2f4;
@@ -118,8 +124,61 @@ table{
     }
 }
 
+.submit-container{
+    text-align: center;
+}
+
+form{
+    input[type="text"]{
+        border-color: #3d8af9;
+        border-radius: 4px;
+        text-align: center;
+        color: #080808;
+        font-size: 1.2em;
+        opacity: 1;
+    }
+    input[type="submit"]{
+        margin: 10px;
+        padding: 5px;
+        border: none;
+        background-color: #3d8af9;
+        border-radius: 4px;
+        color: white;
+        font-size: 1.2em;
+    }
+    input[type="text"]:-moz-placeholder {
+        color: #080808;
+        opacity: 1;
+    } /* Firefox <= 18 */
+    input[type="text"]::-moz-placeholder {
+        color: #080808;
+        opacity: 1;
+    } /* Firefox >= 19 */
+    input[type="text"]::-webkit-input-placeholder {
+        color: #080808;
+        opacity: 1;
+    }
+    input[type="text"]:-ms-input-placeholder{
+        color: #080808;
+        opacity: 1;
+    } /* IE */
+}
+
+.color-white{
+    color: white;
+}
+
+.exeption-commencer{
+    text-align: left !important;
+    background-color: transparent !important;
+}
+
 .compteur-dynamique{
-    width: 36px;
+    width: 30px;
+}
+
+.slider-activite-aleatoire img{
+    height: 20px;
 }
 
 .onoffswitch {

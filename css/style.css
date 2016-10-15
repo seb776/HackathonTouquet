@@ -69,12 +69,17 @@ figure {
   position: relative;
   display: block;
 }
+figure img {
+  width: 100%;
+  display: block;
+}
 figure figcaption {
+  text-align: center;
   font-size: 0.8em;
   width: 100%;
   position: absolute;
   padding: 5px;
-  bottom: 5px;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
@@ -100,14 +105,14 @@ table td:first-child {
 table td:first-child img {
   width: 38px;
 }
-table td:first-child {
-  width: 35%;
-}
 table td:nth-child(1) {
   width: 35%;
 }
 table td:nth-child(2) {
   width: 30%;
+}
+table td:nth-child(3) {
+  width: 40%;
 }
 table td:first-child {
   background-color: #5da2f4;
@@ -115,8 +120,59 @@ table td:first-child {
 table .table-color-1 td:first-child {
   background-color: #3d8af9;
 }
+.submit-container {
+  text-align: center;
+}
+form {
+  /* Firefox <= 18 */
+  /* Firefox >= 19 */
+  /* IE */
+}
+form input[type="text"] {
+  border-color: #3d8af9;
+  border-radius: 4px;
+  text-align: center;
+  color: #080808;
+  font-size: 1.2em;
+  opacity: 1;
+}
+form input[type="submit"] {
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  background-color: #3d8af9;
+  border-radius: 4px;
+  color: white;
+  font-size: 1.2em;
+}
+form input[type="text"]:-moz-placeholder {
+  color: #080808;
+  opacity: 1;
+}
+form input[type="text"]::-moz-placeholder {
+  color: #080808;
+  opacity: 1;
+}
+form input[type="text"]::-webkit-input-placeholder {
+  color: #080808;
+  opacity: 1;
+}
+form input[type="text"]:-ms-input-placeholder {
+  color: #080808;
+  opacity: 1;
+}
+.color-white {
+  color: white;
+}
+.exeption-commencer {
+  text-align: left !important;
+  background-color: transparent !important;
+}
 .compteur-dynamique {
-  width: 36px;
+  width: 30px;
+}
+.slider-activite-aleatoire img {
+  height: 20px;
 }
 .onoffswitch {
   position: relative;
