@@ -12,7 +12,7 @@ body {
 .nav-absolute {
   z-index: 15;
   background-color: #266cbf;
-  position: absolute;
+  position: fixed;
   width: 70%;
   top: 0;
   left: 0;
