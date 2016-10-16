@@ -17,21 +17,23 @@ $( document ).ready(function() {
         }, 400);
     });
     $(".content-vignette").hide();
-    $(".vignette").click(function(){
+    //    $(".vignette").click(function(){
+    //    });
+    $(".apercu-vignette").click(function(){
         $(".content-vignette").hide();
         $(".apercu-vignette").children("table").show();
-        $(this).children(".apercu-vignette").children("table").fadeToggle();
-        $(this).children(".content-vignette").slideToggle();
+        $(this).children("table").fadeToggle();
+        $(this).siblings(".content-vignette").slideToggle();
         $('html, body').animate({
             scrollTop: $(this).offset().top-110
         }, 700);
-        $(".button-save").click(function(){
-            $(this).children(".content-vignette").slideToggle();
-        });
     });
-    
+    $(".toggle-vinette-down").click(function(){
+        $(this).parent(".content-vignette").slideToggle();
+    });
+
     $(".choix-langue").hide();
-    
+
     $(".toggle-langue").click(function(){
         $(".choix-langue").slideToggle();
     });

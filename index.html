@@ -6,22 +6,36 @@
         <!--        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet"> -->
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     </head>
     <body>
+
+        <ul class="nav-absolute">
+            <li><button id="bouton-nav-close" class="close button-sans-sytle"><img src="images/close.png" alt=""></button></li>
+            <div class="clear"></div>
+            <li><a href="#">Mes sauvegardes</a></li>
+            <li><a href="#">Codes Promo</a></li>
+            <li><a class="toggle-langue" href="#">Langues &#x25BC;</a>
+                <form action="">
+                    <table class="choix-langue">
+                        <tr>
+                            <td><img src="images/flage-france.png" alt=""></td>
+                            <td><button class="button-sans-sytle">Français</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/flage-anglais.png" alt=""></td>
+                            <td><button class="button-sans-sytle">Anglais</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </li>
+        </ul>
 
         <div class="fixed">
 
             <nav>
                 <button id="bouton-nav-open" class="button-sans-sytle"><img src="images/navicon.jpg" alt=""></button>
                 <img class="logo-cci" src="images/LogoCoteOpale.jpg" alt="">
-                <ul>
-                    <li><button id="bouton-nav-close" class="close button-sans-sytle"><img src="images/close.png" alt=""></button></li>
-                    <div class="clear"></div>
-                    <li><a href="">Mes sauvegardes</a></li>
-                    <li><a href="">Codes Promo</a></li>
-                    <li><a href="">Langues</a></li>
-                </ul>
             </nav>
 
         </div>
@@ -108,7 +122,7 @@
                         </tr>
                         <tr>
                             <td><img src="images/form_icon_pmr.svg" alt=""></td>
-                            <td><label for="">RMP</label></td>
+                            <td><label for="">PMR</label></td>
                             <td>   
                                 <div class="onoffswitch">
                                     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
