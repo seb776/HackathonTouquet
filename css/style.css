@@ -203,6 +203,16 @@ form input[type="text"]:-ms-input-placeholder {
   width: 30px;
   vertical-align: middle;
 }
+.recherche .tablesupplementaire td:nth-child(2) {
+  width: 12%;
+}
+.recherche .tablesupplementaire td:nth-child(3) {
+  width: 63%;
+}
+.recherche .tablesupplementaire .compteur-dynamique {
+  width: 80px;
+  font-size: 0.8em;
+}
 .bouton-type {
   background-color: #3d8af9;
   border-radius: 3px;
