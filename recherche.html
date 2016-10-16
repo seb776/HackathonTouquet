@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cot Cot d'Opale</title>
+        <!--        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet"> -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    </head>
+    <body>
+
+        <ul class="nav-absolute">
+            <li><button id="bouton-nav-close" class="close button-sans-sytle"><img src="images/close.png" alt=""></button></li>
+            <div class="clear"></div>
+            <li><a href="#">Mes sauvegardes</a></li>
+            <li><a href="#">Codes Promo</a></li>
+            <li><a class="toggle-langue" href="#">Langues &#x25BC;</a>
+                <form action="">
+                    <table class="choix-langue">
+                        <tr>
+                            <td><img src="images/flage-france.png" alt=""></td>
+                            <td><button class="button-sans-sytle">Français</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/flage-anglais.png" alt=""></td>
+                            <td><button class="button-sans-sytle">Anglais</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </li>
+        </ul>
+
+        <div class="fixed">
+
+            <nav>
+                <button id="bouton-nav-open" class="button-sans-sytle"><img src="images/navicon.jpg" alt=""></button>
+                <img class="logo-cci" src="images/LogoCoteOpale.jpg" alt="">
+            </nav>
+
+        </div>
+
+        <div class="main little-fixed">
+
+            <section class="slide-activite-aleatoire">
+                <figure>
+                    <img src="images/slide-1.jpg" alt="">
+                    <figcaption>Découvrez le Touquet Paris Plage</figcaption>
+                </figure>
+            </section>
+
+            <section class="recherche">
+                <form action="">
+                    <table>
+                        <tr class="table-color-1">
+                            <td><img src="images/form_icon_lieu.svg" alt=""></td>
+                            <td colspan="2"><input class="form-lieux" type="text" text="" placeholder="Lieux"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/form_icon_personne.svg" alt=""></td>
+                            <td><label for="">Personnes</label></td>
+                            <td>
+                                <button class="slider-activite-aleatoire button-sans-sytle">
+                                    <img src="images/form_icon_less.svg" alt="">
+                                </button>
+                                <input class="compteur-dynamique" type="text" placeholder="2">
+                                <button class="slider-activite-aleatoire button-sans-sytle">
+                                    <img src="images/form_icon_more.svg" alt="">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="table-color-1">
+                            <td><img src="images/form_icon_money.svg" alt=""></td>
+                            <td><label for="">Budget (€)</label></td>
+                            <td>
+                                <button class="slider-activite-aleatoire button-sans-sytle">
+                                    <img src="images/form_icon_less.svg" alt="">
+                                </button>
+                                <input class="compteur-dynamique" type="text" placeholder="55">
+                                <button class="slider-activite-aleatoire button-sans-sytle">
+                                    <img src="images/form_icon_more.svg" alt="">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><img src="images/form_icon_time.svg" alt=""></td>
+                            <td><label for="">Temps (h)</label><br></td>
+                            <td>
+                                <button class="slider-activite-aleatoire button-sans-sytle">
+                                    <img src="images/form_icon_less.svg" alt="">
+                                </button>
+                                <input class="compteur-dynamique" type="text" placeholder="12">
+                                <button class="slider-activite-aleatoire button-sans-sytle">
+                                    <img src="images/form_icon_more.svg" alt="">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="table-color-1">
+                            <td class="exeption-commencer"><label for="">Commencer (h)</label></td>
+                            <td style="width:45%;text-align:center;">
+                                <button class="slider-activite-aleatoire button-sans-sytle">
+                                    <img src="images/form_icon_less.svg" alt="">
+                                </button>
+                                <input class="compteur-dynamique" type="text" placeholder="Mtn">
+                                <button class="slider-activite-aleatoire button-sans-sytle">
+                                    <img src="images/form_icon_more.svg" alt="">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="table-color-1">
+                            <td><img src="images/form_icon_baby.svg" alt=""></td>
+                            <td><label for="">Enfant</label></td>
+                            <td>
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                                    <label class="onoffswitch-label" for="myonoffswitch">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/form_icon_pmr.svg" alt=""></td>
+                            <td><label for="">PMR</label></td>
+                            <td>   
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                                    <label class="onoffswitch-label" for="myonoffswitch">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>                            
+                            </td>
+                        </tr>
+                        <tr class="table-color-1">
+                            <td class="color-white toggle-filtre" colspan="3">Plus de filtres &#x25BC;</td>
+                        </tr>
+                    </table>
+                    
+<!--                    FILTRE SUPLEMANTAIRE-->
+                    
+                    <table class="content tablesupplementaire">
+                        <tr class="table-color-1">
+                            <td><img src="images/form_icon_personne.svg" alt=""></td>
+                            <td><label for="">Groupe</label><br></td>
+                            <td>
+                                <button class="slider-activite-aleatoire button-sans-sytle">
+                                    <img src="images/form_icon_left.svg" alt="">
+                                </button>
+                                <input class="compteur-dynamique" type="text" placeholder="FAMILLE">
+                                <button class="slider-activite-aleatoire button-sans-sytle">
+                                    <img src="images/form_icon_right.svg" alt="">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/form_icon_activite.svg" alt=""></td>
+                            <td><label for="">Thèmes</label></td>
+                            <td>   
+                                <button class="slider-activite-aleatoire button-sans-sytle">
+                                    <img src="images/form_icon_left.svg" alt="">
+                                </button>
+                                <input class="compteur-dynamique" type="text" placeholder="TERRE">
+                                <button class="slider-activite-aleatoire button-sans-sytle">
+                                    <img src="images/form_icon_right.svg" alt="">
+                                </button>                          
+                            </td>
+                        </tr>
+                        <tr class="table-color-1">
+                            <td><img src="images/form_icon_sport.svg" alt=""></td>
+                            <td><label for="">Sport</label><br></td>
+                            <td>
+                                <button class="slider-activite-aleatoire button-sans-sytle">
+                                    <img src="images/form_icon_left.svg" alt="">
+                                </button>
+                                <input class="compteur-dynamique" type="text" placeholder="SPORTIVE">
+                                <button class="slider-activite-aleatoire button-sans-sytle">
+                                    <img src="images/form_icon_right.svg" alt="">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/form_icon_repas.svg" alt=""></td>
+                            <td><label for="">Repas</label></td>
+                            <td>   
+                                <button class="slider-activite-aleatoire button-sans-sytle">
+                                    <img src="images/form_icon_left.svg" alt="">
+                                </button>
+                                <input class="compteur-dynamique" type="text" placeholder="POISSON">
+                                <button class="slider-activite-aleatoire button-sans-sytle">
+                                    <img src="images/form_icon_right.svg" alt="">
+                                </button>                            
+                            </td>
+                        </tr>
+
+                    </table> 
+                <br>
+                <div class="align-center" style="margin-bottom:20px;">
+                    <a class="bouton-type" href="liste-proposition.html">Rechercher</a>
+                </div>
+                </form>
+            </section>
+        </div>
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
