@@ -136,6 +136,7 @@ figure figcaption {
 }
 .recherche table td:nth-child(1) {
   width: 30%;
+  min-width: 98px;
 }
 .recherche table td:nth-child(2) {
   width: 30%;
@@ -202,6 +203,33 @@ form input[type="text"]:-ms-input-placeholder {
 .compteur-dynamique {
   width: 30px;
   vertical-align: middle;
+}
+.recherche .tablesupplementaire {
+  box-sizing: border-box;
+}
+.recherche .tablesupplementaire td:nth-child(2) {
+  width: 15%;
+}
+.recherche .tablesupplementaire td:nth-child(3) {
+  width: 49%;
+}
+.recherche .tablesupplementaire .compteur-dynamique {
+  width: 80px;
+  font-size: 0.8em;
+}
+.logo-cot-cot-center {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.logo-cot-cot-center h2 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.4em;
+  color: #fff;
+  text-decoration: none;
 }
 .bouton-type {
   background-color: #3d8af9;

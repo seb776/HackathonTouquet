@@ -14,7 +14,7 @@ $( document ).ready(function() {
     $("#bouton-nav-close").click(function(){
         $(".nav-absolute").animate({
             marginLeft: "-100%"
-        }, 400);
+        }, 500);
     });
     $(".content-vignette").hide();
     //    $(".vignette").click(function(){
@@ -26,7 +26,7 @@ $( document ).ready(function() {
         $(this).siblings(".content-vignette").slideToggle();
         $('html, body').animate({
             scrollTop: $(this).offset().top-110
-        }, 700);
+        }, 1000);
     });
     $(".toggle-vinette-down").click(function(){
         $(this).parent(".content-vignette").slideToggle();
@@ -38,4 +38,12 @@ $( document ).ready(function() {
         $(".choix-langue").slideToggle();
     });
 
+    $(".tablesupplementaire").hide();
+    $(".toggle-filtre").click(function(){
+        $(".tablesupplementaire").slideToggle();
+        $('html, body').animate({
+            scrollTop: $(this).offset().top-110
+        }, 1000);
+    });
+    
 });
