@@ -5,20 +5,35 @@ $( document ).ready(function() {
 
     //open nav
     $("#bouton-nav-open").click(function(){
-        $("nav ul").animate({
+        $(".nav-absolute").animate({
             marginLeft: 0
         }, 400);
     });
 
     //close nav
     $("#bouton-nav-close").click(function(){
-        $("nav ul").animate({
+        $(".nav-absolute").animate({
             marginLeft: "-100%"
         }, 400);
     });
-
-    $(window).resize(function(){
-
+    $(".content-vignette").hide();
+    $(".vignette").click(function(){
+        $(".content-vignette").hide();
+        $(".apercu-vignette").children("table").show();
+        $(this).children(".apercu-vignette").children("table").fadeToggle();
+        $(this).children(".content-vignette").slideToggle();
+        $('html, body').animate({
+            scrollTop: $(this).offset().top-110
+        }, 700);
+        $(".button-save").click(function(){
+            $(this).children(".content-vignette").slideToggle();
+        });
+    });
+    
+    $(".choix-langue").hide();
+    
+    $(".toggle-langue").click(function(){
+        $(".choix-langue").slideToggle();
     });
 
 });

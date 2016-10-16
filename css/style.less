@@ -1,7 +1,7 @@
 html, body{
     height: 100%;
     max-height: 100%;
-//    overflow: hidden;
+    //    overflow: hidden;
     font-family: 'Roboto', sans-serif;
     color: #141414;
 }
@@ -9,6 +9,57 @@ html, body{
 *{
     box-sizing: inherit;
 }
+
+.nav-absolute{
+    z-index: 15;
+    background-color: #266cbf;
+    position: absolute;
+    width: 70%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin-left: -100%;
+    #bouton-nav-close{
+        float: right;
+        display: block;
+        cursor: pointer;
+        img{
+            width: 56px;
+        }
+    }
+    li{
+        height: 50px;
+        width: 100%;
+        a{
+            display: block;
+            padding: 20px 0 20px 10%;
+            width: 80%;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+}
+
+.choix-langue{
+    margin-left: 10%;
+    button{
+        color: white;
+    }
+    td{
+        padding: 5px 0;
+    }
+    td:first-child{
+        width: 70px;
+    }
+    img{
+        vertical-align: middle;
+        height: 30px;
+        width: 54px;
+    }
+}
+
 nav{
     background-color: white;
     height: 50px;
@@ -22,34 +73,6 @@ nav{
     .logo-cci{
         float: right;
     }
-    ul{
-        z-index: 10;
-        background-color: #266cbf;
-        position: absolute;
-        width: 70%;
-        top: 0;
-        left: 0;
-        height: 100%;
-        margin-left: -100%;
-        button{
-            float: right;
-            display: block;
-            cursor: pointer;
-        }
-        li{
-            height: 50px;
-            width: 100%;
-            a{
-                display: block;
-                padding: 20px 0 20px 10%;
-                width: 80%;
-                color: white;
-                text-transform: uppercase;
-                font-weight: bold;
-                text-decoration: none;
-            }
-        }
-    }
 }
 
 .fixed{
@@ -62,6 +85,10 @@ nav{
 .main{
     margin-top: 110px;
     z-index: 5;
+}
+
+.little-fixed{
+    margin-top: 50px;
 }
 
 .button-sans-sytle{
@@ -251,10 +278,16 @@ form{
     border-radius: 7px;
     background-position: center;
     background-size:cover;
-    padding: 5%;
     margin: 20px 10px;
     position: relative;
     min-height: 91px;
+    .declancheur-detail{
+        text-decoration: none;
+        color: white;
+    }
+    .apercu-vignette{
+        padding: 5%;
+    }
     table td{
         font-size: 0.8em;
     }
@@ -283,6 +316,58 @@ form{
 .vignette3{
     background:linear-gradient(to right, rgba(61, 138, 249, 100), rgba(0,0,0,0)), url(../images/photo_restaurant.jpg);
 }
+
+.content-vignette{
+    background-color: white;
+    color: #3d8af9;
+    border: 2px solid #3d8af9;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    border-top: none;
+    padding: 5%;
+    img{
+        vertical-align: middle;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    .titre-activite{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    ul{
+        border-left: 1px solid #3d8af9;
+        padding-left: 20px;
+        margin: 10px 20px;
+    }
+    a{
+        color: #196ce3;
+    }
+    .button-save{
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        height: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+.toggle-vinette{
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    img{
+        width: 20px;
+    }
+} 
+.toggle-vinette-down{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
 .recap-recherche {
     color: white;
     padding: 10px;

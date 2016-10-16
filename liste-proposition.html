@@ -5,27 +5,41 @@
         <title>Cot Cot d'Opale</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <!--<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet"> -->
     </head>
     <body>
 
+        <ul class="nav-absolute">
+            <li><button id="bouton-nav-close" class="close button-sans-sytle"><img src="images/close.png" alt=""></button></li>
+            <div class="clear"></div>
+            <li><a href="#">Mes sauvegardes</a></li>
+            <li><a href="#">Codes Promo</a></li>
+            <li><a class="toggle-langue" href="#">Langues &#x25BC;</a>
+                <form action="">
+                    <table class="choix-langue">
+                        <tr>
+                            <td><img src="images/flage-france.png" alt=""></td>
+                            <td><button class="button-sans-sytle">Français</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/flage-anglais.png" alt=""></td>
+                            <td><button class="button-sans-sytle">Anglais</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </li>
+        </ul>
         <div class="fixed">
             <nav>
                 <button id="bouton-nav-open" class="button-sans-sytle"><img src="images/navicon.jpg" alt=""></button>
                 <img class="logo-cci" src="images/LogoCoteOpale.jpg" alt="">
-                <ul>
-                    <li><button id="bouton-nav-close" class="close button-sans-sytle"><img src="images/close.png" alt=""></button></li>
-                    <div class="clear"></div>
-                    <li><a href="">Mes sauvegardes</a></li>
-                    <li><a href="">Codes Promo</a></li>
-                    <li><a href="">Langues</a></li>
-                </ul>
             </nav>
 
             <section class="recap-recherche">
                 <span>Le Touquet</span>
                 <ul>
-                    <li>2<img src="images/form-personne.png" alt=""></li>
+                    <li>2<img src="images/form_icon_personne.svg" alt=""></li>
                     <li>&ensp; 60€</li>
                     <li>&ensp; 1 journée</li>
                 </ul>
@@ -36,42 +50,65 @@
         <div class="main">
 
             <section class="vignette0 vignette vignette-special">
-                <p>Sortie événement - Enduropale</p>
-                <br>
-                <table>
-                    <tr>
-                        <td><img src="" alt=""></td>
-                        <td>9:00</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Aujourd'hui et demain</td>
-                    </tr>
-                </table>
+
+                <div class="apercu-vignette">
+                    <p>Sortie événement - Enduropale</p>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img src="" alt=""></td>
+                            <td>9:00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Aujourd'hui et demain</td>
+                        </tr>
+                    </table>
+                </div>
             </section>
 
             <section class="vignette1 vignette">
+                <!--                <a href="" class="declancheur-detail">-->
                 <div class="prix-bulle">
                     <img src="images/prix-bulle.png" alt="">
                     <span>55€</span>
                 </div>
-                <p>Sortie 1</p>
-                <br>
-                <table>
-                    <tr>
-                        <td><img src="images/sortie_icon_promenade.svg" alt=""></td>
-                        <td>9:00</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/sortie_icon_resto.svg" alt=""></td>
-                        <td>12:30</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/sortie_randonne.svg" alt=""></td>
-                        <td>15:00</td>
-                    </tr>
-                </table>
+                <div class="apercu-vignette">
+                    <p>Sortie 1</p>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img src="images/sortie_randonne.svg" alt=""></td>
+                            <td>9:00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/sortie_icon_resto.svg" alt=""></td>
+                            <td>12:30</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/" alt=""></td>
+                            <td>15:00</td>
+                        </tr>
+                    </table>
+                    <div class="toggle-vinette toggle-vinette-up"><img src="images/sortie_open.svg" alt=""></div>
+                </div>
                 <div class="content-vignette">
-<!--                    <p>Randonnée pedestre 9:00 - 11:00</p>-->
+                    <p class="titre-activite"><img src="images/sortie_icon_promenade.svg" alt="">Randonnée pedestre 9:00 - 11:00</p>
+                    <ul>
+                        <li><img src="images/sortie_open_icon_map.svg" alt=""><a href="#">Chemin d'Opale</a></li>
+                        <li><img src="images/sortie_open_icon_money.svg" alt="">Gratuit</li>
+                    </ul>
+                    <p class="titre-activite"><img src="images/sortie_icon_resto.svg" alt="">La moulerie 12:30</p>
+                    <ul>
+                        <li><img src="images/sortie_open_icon_map.svg" alt=""><a href="#">Place du marché</a></li>
+                        <li><img src="images/sortie_open_icon_money.svg" alt="">&#8776; 20€/Personnes</li>
+                    </ul>
+                    <p class="titre-activite"><img src="images/sorte_icon_cinema.svg" alt="">Spéctacle 15:00</p>
+                    <ul>
+                        <li><img src="images/sortie_open_icon_map.svg" alt=""><a href="#">Boulevard Hubert</a></li>
+                        <li><img src="images/sortie_open_icon_money.svg" alt="">&#8776; 6-7€/Personnes</li>
+                    </ul>
+                    <div class="toggle-vinette toggle-vinette-down"><img src="images/sortie_close.svg" alt=""></div>
+                    <button class="button-sans-sytle button-save"><img src="images/sortie_save.svg" alt=""></button>
                 </div>
             </section>
 
@@ -80,18 +117,40 @@
                     <img src="images/prix-bulle.png" alt="">
                     <span>45€</span>
                 </div>
-                <p>Sortie 2</p>
-                <br>
-                <table>
-                    <tr>
-                        <td><img src="" alt=""></td>
-                        <td>8:00</td>
-                    </tr>
-                    <tr>
-                        <td><img src="" alt=""></td>
-                        <td>14:30</td>
-                    </tr>
-                </table>
+                <div class="apercu-vignette">
+                    <p>Sortie 2</p>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img src="" alt=""></td>
+                            <td>8:00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="" alt=""></td>
+                            <td>14:30</td>
+                        </tr>
+                    </table>
+                    <div class="toggle-vinette toggle-vinette-up"><img src="images/sortie_open.svg" alt=""></div>
+                </div>
+                <div class="content-vignette">
+                    <p class="titre-activite"><img src="images/sortie_icon_promenade.svg" alt="">Randonnée pedestre 9:00 - 11:00</p>
+                    <ul>
+                        <li><img src="images/sortie_open_icon_map.svg" alt=""><a href="#">Chemin d'Opale</a></li>
+                        <li><img src="images/sortie_open_icon_money.svg" alt="">Gratuit</li>
+                    </ul>
+                    <p class="titre-activite"><img src="images/sortie_icon_resto.svg" alt="">La moulerie 12:30</p>
+                    <ul>
+                        <li><img src="images/sortie_open_icon_map.svg" alt=""><a href="#">Place du marché</a></li>
+                        <li><img src="images/sortie_open_icon_money.svg" alt="">&#8776; 20€/Personnes</li>
+                    </ul>
+                    <p class="titre-activite"><img src="images/sorte_icon_cinema.svg" alt="">Spéctacle 15:00</p>
+                    <ul>
+                        <li><img src="images/sortie_open_icon_map.svg" alt=""><a href="#">Boulevard Hubert</a></li>
+                        <li><img src="images/sortie_open_icon_money.svg" alt="">&#8776; 6-7€/Personnes</li>
+                    </ul>
+                    <div class="toggle-vinette toggle-vinette-down"><img src="images/sortie_close.svg" alt=""></div>
+                    <button class="button-sans-sytle button-save"><img src="images/sortie_save.svg" alt=""></button>
+                </div>
             </section>
 
             <section class="vignette3 vignette">
@@ -99,26 +158,48 @@
                     <img src="images/prix-bulle.png" alt="">
                     <span>60€</span>
                 </div>
-                <p>Sortie 3</p>
-                <br>
-                <table>
-                    <tr>
-                        <td><img src="" alt=""></td>
-                        <td>10:00</td>
-                    </tr>
-                    <tr>
-                        <td><img src="" alt=""></td>
-                        <td>14:30</td>
-                    </tr>
-                    <tr>
-                        <td><img src="" alt=""></td>
-                        <td>16:00</td>
-                    </tr>
-                </table>
+                <div class="apercu-vignette">
+                    <p>Sortie 3</p>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><img src="" alt=""></td>
+                            <td>10:00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="" alt=""></td>
+                            <td>14:30</td>
+                        </tr>
+                        <tr>
+                            <td><img src="" alt=""></td>
+                            <td>16:00</td>
+                        </tr>
+                    </table>
+                    <div class="toggle-vinette toggle-vinette-up"><img src="images/sortie_open.svg" alt=""></div>
+                </div>
+                <div class="content-vignette">
+                    <p class="titre-activite"><img src="images/sortie_icon_promenade.svg" alt="">Randonnée pedestre 9:00 - 11:00</p>
+                    <ul>
+                        <li><img src="images/sortie_open_icon_map.svg" alt=""><a href="#">Chemin d'Opale</a></li>
+                        <li><img src="images/sortie_open_icon_money.svg" alt="">Gratuit</li>
+                    </ul>
+                    <p class="titre-activite"><img src="images/sortie_icon_resto.svg" alt="">La moulerie 12:30</p>
+                    <ul>
+                        <li><img src="images/sortie_open_icon_map.svg" alt=""><a href="#">Place du marché</a></li>
+                        <li><img src="images/sortie_open_icon_money.svg" alt="">&#8776; 20€/Personnes</li>
+                    </ul>
+                    <p class="titre-activite"><img src="images/sorte_icon_cinema.svg" alt="">Spéctacle 15:00</p>
+                    <ul>
+                        <li><img src="images/sortie_open_icon_map.svg" alt=""><a href="#">Boulevard Hubert</a></li>
+                        <li><img src="images/sortie_open_icon_money.svg" alt="">&#8776; 6-7€/Personnes</li>
+                    </ul>
+                    <div class="toggle-vinette toggle-vinette-down"><img src="images/sortie_close.svg" alt=""></div>
+                    <button class="button-sans-sytle button-save"><img src="images/sortie_save.svg" alt=""></button>
+                </div>
             </section>
 
             <div class="align-center">
-                <a href="index.html" class="bouton-type">Modifier ma recherche</a>
+                <a href="index.html" class="bouton-type">&#x25C0; Modifier ma recherche</a>
             </div>
             <br>
 
